@@ -11,7 +11,7 @@ def get_data(id=None):
     data = r.json()
     print(data)
     
-get_data(3)
+# get_data(3)
 
 def post_data():
     data = {
@@ -29,7 +29,7 @@ def post_data():
 
 def update_data():
     data = {
-        'id': 5,
+        'id': 3,
         'name': 'Johny',
         'city': 'Chadpur'
     }

@@ -53,7 +53,7 @@ class StudentAPI(View):
         serializer = StudentSerializer(stu, data = python_data, partial=True)
         if serializer.is_valid():
             serializer.save()
-            resp = {'msg': 'Data Created!'}
+            resp = {'msg': 'Data Updated!'}
             json_data = JSONRenderer().render(resp)
             return HttpResponse(json_data, content_type = 'application/json')
         
